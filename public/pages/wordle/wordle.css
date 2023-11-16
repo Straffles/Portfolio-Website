@@ -1,0 +1,84 @@
+:root {
+    --default: black;
+    --absent: #3a3a3c;
+    --present: #b59f3b;
+    --correct: #538d4e;
+}
+
+@font-face {
+    font-family: accuratist;
+    src: url(../../fonts/accuratist/Accuratist/Accuratist.otf);
+}
+
+html, body {
+    display: block;
+    color: white;
+    background: var(--default);
+    font-family: accuratist;
+}
+
+#title {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+hr {
+    width: 500px;
+}
+
+#game {
+    display: grid;
+    width: 100%;
+    height: 600px;
+    place-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
+}
+
+.box {
+    display: grid;
+    width: 60px;
+    height: 60px;
+    place-items: center;
+    border: solid 2px var(--absent);
+    margin: 4px;
+    color: white;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.box.absent {
+    background-color: var(--absent);
+}
+
+.box.present {
+    background-color: var(--present)
+}
+
+.box.correct {
+    background-color: var(--correct);
+}
+
+.animate {
+    animation: flip 0.5s ease;
+}
+
+@keyframes flip{
+    0%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}

@@ -9,6 +9,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none; 
+  color: white;
 }
 
 canvas {
@@ -60,10 +61,5 @@ nav ul li{
 header{
   grid-column: 2/ span 5;
   font-size: 2rem;
-  padding: 2rem;
-}
-
-section {
-  grid-column: 2 / span 5;
   padding: 2rem;
 }
