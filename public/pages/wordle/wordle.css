@@ -10,11 +10,70 @@
     src: url(../../fonts/accuratist/Accuratist/Accuratist.otf);
 }
 
+*{
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; 
+    color: white;
+    overflow: hidden;
+}
+
 html, body {
     display: block;
-    color: white;
     background: var(--default);
     font-family: accuratist;
+}
+
+/* Nav Bar */
+nav{
+    position: inherit;
+    display: flex;
+    padding: 40px;
+    width: 100%;
+    height: 10vh;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul{
+    display: flex;
+    padding: 15px 15px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+nav ul li{
+    position: relative;
+    display: inline-block;
+    margin: 5px 20px;
+    font-size: 1.5vw;
+    color: white;
+    padding: 15px 15px;
+    transition-delay: 0.5s;
+    transition: 0.5s;
+}
+
+nav ul li::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.25s ease-out;
+}
+
+nav ul li:hover::before{
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+nav ul li:hover{
+    font-size: 1.8vw;
 }
 
 #title {

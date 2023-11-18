@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,22 +7,51 @@
     <title>Vite App</title>
   </head>
   <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>Qualifications</li>
+        <li><a href="./pages/skills/skills.html">Skills</a></li>
+      </ul>
+    </nav>
     <canvas id="bg"></canvas>
+
     <main>
-      <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li>Qualifications</li>
-            <li>Skills</li>
-            <li><a href="./pages/wordle/wordle.html">Wordle</a></li>
-            <li><a href="./pages/about/about.html">About Me</a></li>
-          </ul>
-        </nav>
-      <header>
-        <h1>I'm Nhat Minh</h1>
-        <p>Welcome to my Portfolio</p>
-      </header>
+      <div class="text">
+        <section class="hidden">
+          <h1>I'm Minh</h1>
+        </section>
+        <section class="hidden">
+          <p>
+            An enthusiastic freshman with a passion for technology, automobiles,
+            and financial freedom. My portfolio showcases my projects, insights,
+            and aspirations in these areas. Join me on this expedition as I
+            explore the wonders of technology, delve into the world of
+            automobiles, and unravel the mysteries of finance.
+          </p>
+        </section>
+          
+          <section class="hidden">
+            <div class="flip">
+            <span style="--i: 1">W</span>
+            <span style="--i: 2">e</span>
+            <span style="--i: 3">l</span>
+            <span style="--i: 4">c</span>
+            <span style="--i: 5">o</span>
+            <span style="--i: 6">m</span>
+            <span style="--i: 7">e</span>
+            <span style="--i: 8">!</span>
+          </div>
+          </section>
+          
+        
+      </div>
+
+      <div class="avatar">
+        <img src="./images/avatar.png" />
+      </div>
     </main>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
