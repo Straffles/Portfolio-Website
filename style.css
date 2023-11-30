@@ -27,11 +27,11 @@ canvas {
 
 main {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-evenly;
   color: white;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 /* Nav Bar */
@@ -87,7 +87,7 @@ nav ul li:hover{
 }
 
 
-/* text config */
+/* text */
 div.text {
   padding: 1.5rem;
   align-self: center;
@@ -97,14 +97,13 @@ div.text {
 section {
   letter-spacing: 0.1rem;
   line-height: 1.8;
-  font-size: 1.2vw;
-  /* padding-left: 2rem; */
+  font-size: 1.2vh;
   width: fit-content;
 }
 
 section h1{
   letter-spacing: 0.4rem;
-  font-size: 6vw;
+  font-size: 4vh;
 }
 
 /* image */
@@ -148,4 +147,18 @@ section h1{
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+@media screen and (min-width:414px) {
+  main {
+    flex-wrap: wrap;
+  }
+
+  nav ul li{
+    font-size: 1em;
+  }
+
+  nav ul li:hover{
+    font-size: 1.2em;
+  }
 }
