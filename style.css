@@ -26,12 +26,10 @@ canvas {
 }
 
 main {
-  display: flex;
   justify-content: space-evenly;
   color: white;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
 }
 
 /* Nav Bar */
@@ -86,18 +84,26 @@ nav ul li:hover{
   font-size: 2.2em;
 }
 
-
-/* text */
-div.text {
-  padding: 1.5rem;
+/* content container */
+div.container {
+  display: flex;
   align-self: center;
   max-height: 100vh;
 }
 
-section {
+/* text */
+div.text {
   letter-spacing: 0.1rem;
   line-height: 1.8;
-  font-size: 1.2vh;
+  font-size: 1.2rem;
+}
+
+div.paragraph {
+  
+  padding: 4rem;
+}
+
+section {
   width: fit-content;
 }
 
@@ -149,16 +155,29 @@ section h1{
   transform: translateX(0);
 }
 
-@media screen and (min-width:414px) {
+@media screen and (max-width:414px) {
   main {
     flex-wrap: wrap;
   }
 
+  nav{
+    padding: 1rem
+  }
+
   nav ul li{
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   nav ul li:hover{
-    font-size: 1.2em;
+    font-size: 1.2rem;
+  }
+  
+  div.container {
+    display: block;
+  }
+
+  div.avatar{
+    padding: 2.5rem;
+    content:url("./images/avatar-small.webp");
   }
 }
