@@ -85,19 +85,19 @@ nav ul li:hover{
 }
 
 /* content container */
-div.container {
+.container {
   display: flex;
   align-self: center;
 }
 
 /* text */
-div.text {
+.text {
   letter-spacing: 0.1rem;
   line-height: 1.8;
   font-size: 1.2rem;
 }
 
-div.paragraph {
+.paragraph {
   
   padding: 4rem;
 }
@@ -171,11 +171,11 @@ section h1{
     font-size: 1.2rem;
   }
   
-  div.container {
+  .container {
     display: block;
   }
 
-  div.avatar{
+  .avatar img:first-of-type{
     padding: 2.5rem;
     content:url("./images/avatar-small.webp");
   }

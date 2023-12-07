@@ -116,13 +116,15 @@ function isMobile() {
   const avatar = document.querySelector('.avatar');
   const divText = document.querySelector('.text');
   const container = document.querySelector('.container');
-  const paragraph1 = divText.querySelector('#p2');
+  const paragraph2 = divText.querySelector('#p2');
 
   if (( window.innerWidth <= 600 ) && ( window.innerHeight <= 900 )){
-    divText.insertBefore(avatar, paragraph1);
+    divText.insertBefore(avatar, paragraph2);
+    document.getElementById("img").src="./images/avatar-small.webp";
   }
   else {
     container.appendChild(avatar)
+    document.getElementById("img").src="./images/avatar-large.webp";
   }
 }
 
@@ -130,3 +132,4 @@ function isMobile() {
 window.addEventListener('resize', () => {
   isMobile();
 })
+isMobile()
