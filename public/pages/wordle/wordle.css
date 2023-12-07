@@ -5,11 +5,6 @@
     --correct: #538d4e;
 }
 
-@font-face {
-    font-family: accuratist;
-    src: url(../../fonts/accuratist/Accuratist/Accuratist.otf);
-}
-
 *{
     padding: 0;
     box-sizing: border-box;
@@ -22,7 +17,8 @@
 html, body {
     display: block;
     background: var(--default);
-    font-family: accuratist;
+    font-family: 'Courier New', monospace;
+    font-weight: 600;
 }
 
 /* Nav Bar */
