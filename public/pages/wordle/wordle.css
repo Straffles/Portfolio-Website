@@ -44,7 +44,7 @@ nav ul li{
     position: relative;
     display: inline-block;
     margin: 5px 20px;
-    font-size: 1.5vw;
+    font-size: 2em;
     color: white;
     padding: 15px 15px;
     transition-delay: 0.5s;
@@ -69,7 +69,7 @@ nav ul li:hover::before{
 }
 
 nav ul li:hover{
-    font-size: 1.8vw;
+    font-size: 2.2em;
 }
 
 #title {
@@ -136,4 +136,55 @@ hr {
     100%{
         transform: scaleY(1);
     }
+}
+
+button{
+    background-color: var(--correct);
+    border-radius: 20px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 25px;
+}
+
+button:active{
+    opacity: 0.8;
+}
+
+.popup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.3);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.open {
+    opacity: 1;
+    z-index: 10;
+}
+
+.popup-content{
+    background: var(--absent);
+    border-radius: 5px;
+    padding: 15px 25px;
+    text-align: center;
+    width: fit-content;
+}
+
+.popup-content h1{
+    line-height: 24px;
+    padding: 10px;
+}
+
+.popup-content p{
+    line-height: 24px;
+    padding: 10px 0;
 }

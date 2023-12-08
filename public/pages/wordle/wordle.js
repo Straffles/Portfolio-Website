@@ -154,11 +154,16 @@ function highlight_positions() {
     }
 }
 
+const restartBtn = document.getElementById('restart');
+const popup = document.getElementById('popup');
+const popupTitle = document.getElementById('popup-title')
+
 function end_game(state) {
     if (state == true) {
-        console.log('You Win')
+        popup.classList.add('open')
     } else if (state == false) {
-        console.log('Out of try');
+        popupTitle.innerHTML = 'Try Again!'
+        popup.classList.add('open')
     }
 }
 
@@ -167,3 +172,9 @@ window.onload = function () {
     draw_grid(game);
     key_log();
 };
+
+restartBtn.addEventListener('click', () => {
+    popup.classList.remove('open');
+    location.reload();
+});
+
