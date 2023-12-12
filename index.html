@@ -1,81 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <meta name="description" content="Minh's personal portfolio website." />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="./pages/skills/skills.html">Skills</a></li>
-          <li>Qualifications</li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <canvas id="bg"></canvas>
-      <div class="container">
-        <div class="text">
-          <div class="paragraph" id="p1">
-            <section class="hidden">
-              <h1>I'm Minh</h1>
-            </section>
 
-            <section class="hidden">
-              <p>
-                An enthusiastic freshman with a passion for technology,
-                automobiles, and financial freedom. My portfolio showcases my
-                projects, insights, and aspirations in these areas. Join me on
-                this expedition as I explore the wonders of technology, delve
-                into the world of automobiles, and unravel the mysteries of
-                finance.
-              </p>
-            </section>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <meta name="description" content="Minh's personal portfolio website." />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-            <section class="hidden">
-              <div class="flip">
-                <span style="--i: 1">W</span>
-                <span style="--i: 2">e</span>
-                <span style="--i: 3">l</span>
-                <span style="--i: 4">c</span>
-                <span style="--i: 5">o</span>
-                <span style="--i: 6">m</span>
-                <span style="--i: 7">e</span>
-                <span style="--i: 8">!</span>
-              </div>
-            </section>
-          </div>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="./pages/skills/skills.html">Skills</a></li>
+        <li><a href="./pages/qualifications/qualifications.html">Qualifications</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- 3D Object -->
+    <canvas id="bg"></canvas>
 
-          <div class="paragraph" id="p2">
-            <section class="hidden">
-              <p>
-                Whether it's building innovative software, analyzing the latest
-                car models, or decoding the stock market, I approach every
-                challenge with a blend of curiosity, creativity, and analytical
-                thinking. Through my diverse interests, I strive to learn, grow,
-                and contribute to a future shaped by technological advancements,
-                financial awareness, and sustainable mobility.
-              </p>
-            </section>
-          </div>
+    <!-- content -->
+    <div class="container">
+      <div class="text">
+        <div class="paragraph" id="p1">
+          <section class="hidden">
+            <h1>I'm Minh</h1>
+          </section>
+
+          <section class="hidden">
+            <p>
+              An enthusiastic freshman with a passion for technology,
+              automobiles, and financial freedom. My portfolio showcases my
+              projects, insights, and aspirations in these areas. Join me on
+              this expedition as I explore the wonders of technology, delve
+              into the world of automobiles, and unravel the mysteries of
+              finance.
+            </p>
+          </section>
+          <!-- flipping text -->
+          <section class="hidden">
+            <div class="flip">
+              <span style="--i: 1">W</span>
+              <span style="--i: 2">e</span>
+              <span style="--i: 3">l</span>
+              <span style="--i: 4">c</span>
+              <span style="--i: 5">o</span>
+              <span style="--i: 6">m</span>
+              <span style="--i: 7">e</span>
+              <span style="--i: 8">!</span>
+            </div>
+          </section>
         </div>
 
-        <div class="avatar">
-          <img
-            src="./images/avatar-large.webp"
-            id="img"
-            alt="profile-picture"
-          />
-          <!-- <img src="./images/avatar-small.webp" alt="profile-picture" id="img2" style="display: none;"> -->
+        <div class="paragraph" id="p2">
+          <section class="hidden">
+            <p>
+              Whether it's building innovative software, analyzing the latest
+              car models, or decoding the stock market, I approach every
+              challenge with a blend of curiosity, creativity, and analytical
+              thinking. Through my diverse interests, I strive to learn, grow,
+              and contribute to a future shaped by technological advancements,
+              financial awareness, and sustainable mobility.
+            </p>
+          </section>
         </div>
       </div>
-    </main>
 
-    <script type="module" src="/main.js"></script>
-  </body>
+      <div class="avatar">
+        <img src="./images/avatar-large.webp" id="img" alt="profile-picture" />
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="social-icons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <div class="contact-info">
+        <ul>
+          <li>Name: Nguyen Huu Nhat Minh</li>
+          <li>Email: nhatminh21076@gmail.com</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/main.js"></script>
+</body>
 </html>

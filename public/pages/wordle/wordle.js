@@ -69,15 +69,20 @@ function keyboard(x) {
             if (column == 5) {
                 if (get_current_word() == answer) {
                     highlight_positions();
-                    end_game(true);
+                    end_key_log();
+                    setTimeout(() => {
+                        end_game(true);
+                    }, 2200);
                 }
                 else if (is_valid() == true) {
                     highlight_positions();
                     row += 1;
                     column = 0;
                     if (row == 6) {
-                        end_game(false);
                         end_key_log();
+                        setTimeout(() => {
+                            end_game(false);
+                        }, 2200);
                     }
                 }
                 else if (is_valid() == false) {
@@ -157,6 +162,7 @@ function highlight_positions() {
 const restartBtn = document.getElementById('restart');
 const popup = document.getElementById('popup');
 const popupTitle = document.getElementById('popup-title')
+
 
 function end_game(state) {
     if (state == true) {
